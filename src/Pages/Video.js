@@ -93,9 +93,9 @@ const Video = () => {
         </form>
         {/* sadasd */}
         <hr />
-        < id="progress">
+        <h2 id="progress">
           Uploading: <span>{progress}%</span>{" "}
-        </
+        </h2>
       </div>
       <div>
         <video className="video" src={video} controls muted></video>

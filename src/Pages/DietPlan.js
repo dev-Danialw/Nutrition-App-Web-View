@@ -43,7 +43,10 @@ const DietPlan = () => {
   return (
     <>
       <h1 className="recipe-heading">Diet Plan</h1>
-      <form className="nutrition-detail-form">
+      <form
+        className="nutrition-detail-form"
+        onSubmit={(e) => e.preventDefault()}
+      >
         <div className="nutrition-detail-form-div">
           <input
             type="number"
