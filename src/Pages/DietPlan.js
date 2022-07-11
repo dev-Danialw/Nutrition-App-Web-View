@@ -11,7 +11,7 @@ const DietPlan = () => {
   }
   function getMealData() {
     fetch(
-      `https://api.spoonacular.com/mealplanner/generate?apiKey=cb1c464d94f142c08b156c5beddade8b&timeFrame=day&targetCalories=${calories}`
+      `https://api.spoonacular.com/mealplanner/generate?apiKey=5a4878f434a64d9c8c6c00dd2c89df80&timeFrame=day&targetCalories=${calories}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -25,7 +25,7 @@ const DietPlan = () => {
 
   const startHandler = async () => {
     fetch(
-      `https://api.spoonacular.com/mealplanner/generate?apiKey=cb1c464d94f142c08b156c5beddade8b&timeFrame=day&targetCalories=${2000}`
+      `https://api.spoonacular.com/mealplanner/generate?apiKey=5a4878f434a64d9c8c6c00dd2c89df80&timeFrame=day&targetCalories=${2000}`
     )
       .then((response) => response.json())
       .then((data) => {
