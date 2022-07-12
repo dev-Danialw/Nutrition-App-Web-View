@@ -3,7 +3,42 @@ import { Link } from "react-router-dom";
 import MealList from "./MealList";
 
 const DietPlan = () => {
-  const [mealData, setMealData] = useState(null);
+  const [mealData, setMealData] = useState({
+    meals: [
+      {
+        id: 800043,
+        imageType: "jpg",
+        title: "Fried Green Tomato BLT Sandwich",
+        readyInMinutes: 35,
+        servings: 4,
+      },
+      {
+        id: 414104,
+        imageType: "jpg",
+        title: "Steaks with Chipotle Sauce",
+        readyInMinutes: 25,
+        servings: 4,
+        sourceUrl:
+          "https://foxeslovelemons.com/wp-content/uploads/2022/03/Wonton-Nachos-4-728x486.jpg/",
+      },
+      {
+        id: 875711,
+        imageType: "jpg",
+        title: "Banh Mi Nachos",
+        readyInMinutes: 75,
+        servings: 8,
+        sourceUrl:
+          "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps24375_WNC62337D65-3.jpg/",
+      },
+    ],
+    nutrients: {
+      calories: 2000.91,
+      protein: 89.21,
+      fat: 122.39,
+      carbohydrates: 131.54,
+    },
+  });
+
   const [calories, setCalories] = useState(2000);
 
   function handleChange(e) {
@@ -17,29 +52,18 @@ const DietPlan = () => {
       .then((response) => response.json())
       .then((data) => {
         setMealData(data);
-        // console.log(data);
       })
       .catch(() => {
         console.log("error");
       });
   }
 
-  useEffect(() => {
-    startHandler();
-  }, []);
+  // useEffect(() => {
+  //   startHandler();
+  // }, []);
 
-  const startHandler = async () => {
-    const check = localStorage.getItem("mealData");
-    if (check) {
-      setMealData(JSON.parse(check));
-    } else {
-      const api = await fetch(
-        `https://api.spoonacular.com/mealplanner/generate?apiKey=57fe449dd3ec49beb8f006880120c125&timeFrame=day&targetCalories=${2000}`
-      );
-      const data = await api.json();
-      localStorage.setItem("mealData", JSON.stringify(data));
-    }
-  };
+  // const startHandler = async () => {};
+
   return (
     <>
       <nav className="NutritionScreen-btn">
