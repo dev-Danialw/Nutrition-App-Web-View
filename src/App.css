@@ -568,7 +568,7 @@ li {
 .recipe-card {
   background-color: white;
   width: 90%;
-  margin: auto;
+  margin: 2.5rem auto;
   border-radius: 30px;
   -webkit-box-shadow: 5px 5px 42px -1px #000000;
   box-shadow: 5px 5px 42px -1px #000000;
@@ -663,7 +663,7 @@ body {
 }
 
 .card-list {
-  margin-top: 4rem;
+  margin-top: 1.5rem;
 }
 
 .card {
