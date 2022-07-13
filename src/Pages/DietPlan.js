@@ -19,7 +19,7 @@ const DietPlan = () => {
         readyInMinutes: 25,
         servings: 4,
         sourceUrl:
-          "https://foxeslovelemons.com/wp-content/uploads/2022/03/Wonton-Nachos-4-728x486.jpg/",
+          "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps24375_WNC62337D65-3.jpg",
       },
       {
         id: 875711,
@@ -28,7 +28,7 @@ const DietPlan = () => {
         readyInMinutes: 75,
         servings: 8,
         sourceUrl:
-          "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps24375_WNC62337D65-3.jpg/",
+          "https://i1.wp.com/forksandfolly.com/wp-content/uploads/2017/09/bahn-mi-tacos-8.jpg?fit=780%2C518&ssl=1",
       },
     ],
     nutrients: {
@@ -47,7 +47,7 @@ const DietPlan = () => {
 
   function getMealData() {
     fetch(
-      `https://api.spoonacular.com/mealplanner/generate?apiKey=5a4878f434a64d9c8c6c00dd2c89df80&timeFrame=day&targetCalories=${calories}`
+      `https://api.spoonacular.com/mealplanner/generate?apiKey=57fe449dd3ec49beb8f006880120c125&timeFrame=day&targetCalories=${calories}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -58,11 +58,6 @@ const DietPlan = () => {
       });
   }
 
-  // useEffect(() => {
-  //   startHandler();
-  // }, []);
-
-  // const startHandler = async () => {};
 
   return (
     <>

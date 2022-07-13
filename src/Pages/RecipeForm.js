@@ -83,7 +83,7 @@ const RecipeForm = () => {
                 to="/recipe/uploadedrecipes"
                 className="recipe-upload-button"
               >
-                View Upload Recipees
+                View uploaded Recipees
               </Link>
             </div>
           ) : null}
@@ -145,7 +145,7 @@ const RecipeForm = () => {
             disabled={
               !recipe.name ||
               !recipe.instructions ||
-              !recipe.ingredients ||
+              !recipe.ingredients || 
               !recipe.photo
             }
             className="recipeform-submitbtn"

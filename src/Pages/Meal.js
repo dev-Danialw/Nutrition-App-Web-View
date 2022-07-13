@@ -16,6 +16,8 @@ export default function Meal({ meal }) {
       });
   }, [meal.id]);
 
+  
+
   return (
     <div className="meal-card">
       <h1>{meal.title}</h1>
@@ -25,7 +27,6 @@ export default function Meal({ meal }) {
         <li>Number of servings: {meal.servings}</li>
       </ul>
 
-      {/* <a href={meal.sourceUrl}>Go to Recipe</a> */}
     </div>
   );
 }
