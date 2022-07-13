@@ -83,13 +83,15 @@ const RecipeForm = () => {
                 to="/recipe/uploadedrecipes"
                 className="recipe-upload-button"
               >
-                View uploaded Recipees
+                View uploaded Recipes
               </Link>
             </div>
           ) : null}
         </nav>
 
-        <h1>ENTER YOUR RECIPE </h1>
+        <h1 style={{ marginLeft: "1rem", color: "white" }}>
+          ENTER YOUR RECIPE{" "}
+        </h1>
 
         <form onSubmit={submitHandler} className="recipeform-form">
           <p className="recipeform-form-p">
@@ -145,7 +147,7 @@ const RecipeForm = () => {
             disabled={
               !recipe.name ||
               !recipe.instructions ||
-              !recipe.ingredients || 
+              !recipe.ingredients ||
               !recipe.photo
             }
             className="recipeform-submitbtn"

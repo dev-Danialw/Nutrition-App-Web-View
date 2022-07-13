@@ -17,7 +17,7 @@ const Recipes = () => {
     },
   ]);
 
-  const [loader,setLoader] = useState(false)
+  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
     setRecipeData();
@@ -63,47 +63,41 @@ const Recipes = () => {
     let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`;
     setLoader(true);
 
-    try{
+    try {
       const response = await axios(url);
       setRecipe([response.data.meals[0]]);
-      setLoader(false)
-    }catch(error){
-      console.log(error)
+      setLoader(false);
+    } catch (error) {
+      console.log(error);
     }
-   
-
-
-   
   };
 
   const startHandler = async () => {
-
-    setLoader(true)
+    setLoader(true);
     let url = "https://www.themealdb.com/api/json/v1/1/random.php";
     try {
       const response = await axios(url);
       setRecipe([response.data.meals[0]]);
-      setLoader(false)
+      setLoader(false);
     } catch (error) {
       console.log(error);
-    }    
-    setLoader(false)
+    }
+    setLoader(false);
   };
 
   useEffect(() => {
-    setLoader(true)
+    setLoader(true);
     startHandler();
   }, []);
 
- 
   return (
     <div className="recipe">
-       <nav className="NutritionScreen-btn">
+      <nav className="NutritionScreen-btn">
         <Link to="/" className="go-back-btn">
           <i className="fa-solid fa-chevron-left"></i>
         </Link>
       </nav>
-      
+
       <div className="recipe-upload-button-container">
         <Link to="/recipe/form" className="recipe-upload-button">
           Upload your Recipe
@@ -119,7 +113,7 @@ const Recipes = () => {
         <div className="nutrition-detail-form-div">
           <input
             type="text"
-            placeholder="search item here"
+            placeholder="search recipe here"
             onChange={(e) => setKeyword(e.target.value)}
           />
           <i
@@ -129,64 +123,64 @@ const Recipes = () => {
         </div>
       </form>
 
-      {!loader ?   <div className="recipe-card">
-        <h1 className="recipe-card-name">
-          Recipe:{" "}
-          <span className="recipe-card-name-span">
-            {recipeFinalData.length >= 1
-              ? recipeFinalData[0].name
-              : "search..."}
-          </span>
-        </h1>
-        <div className="recipe-image-container">
-          <img src={recipeFinalData[0].image} alt></img>
-        </div>
-
-        <hr />
-        <br />
-        <h2 className="recipe-card-ingredients">Ingredients & quantity</h2>
-
-        <div class="recipe-ingredients-list">
-          <div>
-            {recipeFinalData[0].ingredients.map((data) => {
-              return (
-                <li>
-                  <i class="fa-solid fa-champagne-glasses"></i> {data}
-                </li>
-              );
-            })}
-          </div>
-          <div>
-            {recipeFinalData[0].measure.map((data) => {
-              return <li>{data.substring(0,17)} </li>;
-            })}
-          </div>
-        </div>
-        <div className="instructions-div">
-          <h1 className="instruction-div-heading">
-            <i class="fa-solid fa-map"></i> Instructions
+      {!loader ? (
+        <div className="recipe-card">
+          <h1 className="recipe-card-name">
+            Recipe:{" "}
+            <span className="recipe-card-name-span">
+              {recipeFinalData.length >= 1
+                ? recipeFinalData[0].name
+                : "search..."}
+            </span>
           </h1>
-          <p className="recipe-instructions">
-            {recipeFinalData.length >= 1
-              ? recipeFinalData[0].instructions
-              : "search..."}
-          </p>
+          <div className="recipe-image-container">
+            <img src={recipeFinalData[0].image} alt></img>
+          </div>
+
+          <hr />
+          <br />
+          <h2 className="recipe-card-ingredients">Ingredients & quantity</h2>
+
+          <div class="recipe-ingredients-list">
+            <div>
+              {recipeFinalData[0].ingredients.map((data) => {
+                return (
+                  <li>
+                    <i class="fa-solid fa-champagne-glasses"></i> {data}
+                  </li>
+                );
+              })}
+            </div>
+            <div>
+              {recipeFinalData[0].measure.map((data) => {
+                return <li>{data.substring(0, 17)} </li>;
+              })}
+            </div>
+          </div>
+          <div className="instructions-div">
+            <h1 className="instruction-div-heading">
+              <i class="fa-solid fa-map"></i> Instructions
+            </h1>
+            <p className="recipe-instructions">
+              {recipeFinalData.length >= 1
+                ? recipeFinalData[0].instructions
+                : "search..."}
+            </p>
+          </div>
         </div>
-      </div> :  <div className="loader-center" style={{marginTop : '4rem'}}>
-        <Bars
-          height="150"
-          width="190"
-          ariaLabel="loading"
-          color="#fa7d19 
+      ) : (
+        <div className="loader-center" style={{ marginTop: "4rem" }}>
+          <Bars
+            height="150"
+            width="190"
+            ariaLabel="loading"
+            color="#fa7d19 
           "
-        />
-
-      </div>}
-
-    
+          />
+        </div>
+      )}
     </div>
   );
- };
-
+};
 
 export default Recipes;
