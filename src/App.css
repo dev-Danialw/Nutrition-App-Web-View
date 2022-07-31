@@ -39,7 +39,7 @@
   color: #fff;
 }
 
-.userSelectionScreen-navigations-navigation-links {
+/* .userSelectionScreen-navigations-navigation-links {
   color: white;
   background-color: rgba(2, 54, 2, 0.904);
   padding: 1.9rem 2rem;
@@ -50,7 +50,7 @@
   font-weight: bolder;
   font-size: 1.4rem;
   border-radius: 50%;
-}
+} */
 
 .nutrition-details-page {
   background-color: rgb(16, 216, 16);
@@ -98,7 +98,6 @@
 .nutrition-details-page-nutrition-information {
   color: black;
   margin-top: 2rem;
-  text-align: center;
 }
 
 li {
@@ -119,7 +118,7 @@ li {
 .go-back-btn i {
   font-size: 2.5rem;
   /* margin-left: 2rem; */
-  color: white;
+  color: purple;
   margin-right: 2rem;
 }
 
@@ -221,13 +220,12 @@ body {
 
 .recipe-upload-button-container {
   background-color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-align: center;
   font-size: 1.3rem;
   width: 60%;
   border-radius: 15px 50px 10px 51px;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .recipeform-form {
@@ -433,14 +431,14 @@ body {
 
 /* MINE */
 .userSelectionScreen {
-  background-color: rgb(16, 216, 16);
+  background-color: white;
 
   height: 100vh;
   max-height: -webkit-fill-available;
 }
 
 .userSelectionScreen-username {
-  color: white;
+  color: black;
   font-size: 1.6rem;
   padding: 2rem 1rem;
 }
@@ -455,19 +453,22 @@ body {
   align-items: center;
   margin-top: 0.7rem;
   color: #fff;
+  /* margin: 2rem; */
 }
 
 .userSelectionScreen-navigations-navigation-links {
-  color: white;
-  background-color: rgba(2, 54, 2, 0.904);
-  padding: 1.9rem 2rem;
+  color: black;
+  background-color: rgb(16, 216, 16);
+  box-shadow: 2px 5px 9px 0px rgba(0, 0, 0, 0.52);
+  padding: 1.5rem 2.2rem;
   width: 130px;
   text-align: center;
-  margin: 0.6rem;
+  color: black;
+  margin: 1rem;
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.4rem;
-  border-radius: 50%;
+  border-radius: 8px;
 }
 
 .nutrition-details-page {
@@ -535,14 +536,15 @@ li {
   border-radius: 60px;
 }
 .NutritionScreen-btn {
-  padding-top: 1.2rem;
-  text-align: right;
+  padding-top: 0.7rem;
+  text-align: left;
 }
 
 .go-back-btn i {
   font-size: 2.5rem;
-  color: white;
-  margin-right: 1.5rem;
+  color: green;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .nutrition-details-heading-span {
@@ -568,7 +570,7 @@ li {
 .recipe-card {
   background-color: white;
   width: 90%;
-  margin: 2.5rem auto;
+  margin: auto;
   border-radius: 30px;
   -webkit-box-shadow: 5px 5px 42px -1px #000000;
   box-shadow: 5px 5px 42px -1px #000000;
@@ -663,7 +665,7 @@ body {
 }
 
 .card-list {
-  margin-top: 1.5rem;
+  margin-top: 4rem;
 }
 
 .card {
@@ -756,16 +758,16 @@ body {
 .video-heading {
   color: white;
   font-size: 2rem;
-  margin: 1.2rem;
+  margin: 1rem;
 }
 
 .btns {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
-  margin-left: 7rem;
+  margin-left: 6rem;
 }
 .select-file {
   width: 0.1px;
@@ -773,7 +775,6 @@ body {
 }
 .select-file + label {
   display: flex;
-
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
   padding: 0.7rem;
   font-size: 1rem;
@@ -792,6 +793,9 @@ body {
   font-weight: 700;
   color: white;
   background-color: green;
+}
+.upload-file > svg {
+  color: white;
 }
 
 #video-icon {
@@ -822,4 +826,9 @@ body {
   background-color: white;
   width: 40vw;
   height: 20vh;
+  border-radius: 8px;
+}
+
+.grocery {
+  height: 14px;
 }

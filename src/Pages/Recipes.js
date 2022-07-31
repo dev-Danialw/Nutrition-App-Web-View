@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Bars } from "react-loader-spinner";
+import grocery from "../grocery.png";
 
 const Recipes = () => {
   const [recipe, setRecipe] = useState([]);
@@ -113,7 +114,7 @@ const Recipes = () => {
         <div className="nutrition-detail-form-div">
           <input
             type="text"
-            placeholder="search recipe here"
+            placeholder="search item here"
             onChange={(e) => setKeyword(e.target.value)}
           />
           <i
@@ -146,7 +147,7 @@ const Recipes = () => {
               {recipeFinalData[0].ingredients.map((data) => {
                 return (
                   <li>
-                    <i class="fa-solid fa-champagne-glasses"></i> {data}
+                    <img src={grocery} alt="" className="grocery" /> {data}
                   </li>
                 );
               })}
