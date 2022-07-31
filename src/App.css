@@ -20,7 +20,7 @@
   text-align: center;
 }
 .userSelectionScreen {
-  background-color: rgb(16, 216, 16);
+  /* background-color: rgb(16, 216, 16); */
   height: 100vh;
   max-height: -webkit-fill-available;
 }
@@ -44,6 +44,7 @@
   align-items: center;
   margin-top: 0.7rem;
   color: #fff;
+  background-color: #fff;
 }
 
 /* .userSelectionScreen-navigations-navigation-links {
@@ -213,9 +214,6 @@ li {
 }
 .recipe-image-container img {
   width: 100%;
-}
-body {
-  background-color: rgb(16, 216, 16);
 }
 
 .recipe-upload-button {
