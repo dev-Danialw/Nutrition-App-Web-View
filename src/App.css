@@ -86,7 +86,7 @@
   background-color: white;
   font-size: 1.7rem;
   padding: 0.9rem 0.9rem;
-  color: green;
+  color: #83f28f;
 }
 
 .nutrition-detail-form-div {
@@ -224,14 +224,12 @@ li {
 }
 
 .recipe-upload-button-container {
-  /* background-color: white; */
-  /* padding: 0.5rem; */
+  background-color: #39e75f;
+  padding: 0.5rem;
   text-align: center;
-  font-size: 1.3rem;
-  /* width: 60%; */
-  /* border-radius: 15px 50px 10px 51px; */
-  /* margin-top: 0.5rem; */
-  margin-left: 17rem;
+  width: 10%;
+
+  margin-left: 18rem;
 }
 
 .recipeform-form {
@@ -464,7 +462,8 @@ li {
 
 .userSelectionScreen-navigations-navigation-links {
   color: black;
-  background-color: rgb(16, 216, 16);
+  /* background-color: rgb(16, 216, 16); */
+  background-color: #83f28f;
   box-shadow: 2px 5px 9px 0px rgba(0, 0, 0, 0.52);
   padding: 1.5rem 2.2rem;
   width: 130px;
@@ -509,7 +508,7 @@ input::-webkit-inner-spin-button {
   background-color: white;
   font-size: 1.7rem;
   padding: 0.9rem 0.9rem;
-  color: green;
+  color: #83f28f;
 }
 
 .nutrition-detail-form-div {
@@ -548,9 +547,10 @@ li {
 
 .go-back-btn i {
   font-size: 2.5rem;
-  color: green;
+  color: #83f28f;
   margin-left: 1rem;
   margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
 }
 
 .nutrition-details-heading-span {
@@ -786,8 +786,8 @@ body {
   padding: 0.7rem;
   font-size: 1rem;
   font-weight: 700;
-  color: white;
-  background-color: green;
+  color: black;
+  background-color: #39e75f;
 }
 
 .upload-file {
@@ -798,8 +798,8 @@ body {
   padding: 0.7rem;
   font-size: 1rem;
   font-weight: 700;
-  color: white;
-  background-color: green;
+  color: black;
+  background-color: #39e75f;
 }
 .upload-file > svg {
   color: white;
@@ -838,4 +838,11 @@ body {
 
 .grocery {
   height: 14px;
+}
+
+.userSelectionScreen {
+  background-color: #cefad0;
+}
+.userSelectionScreen-navigations {
+  background-color: #cefad0;
 }
