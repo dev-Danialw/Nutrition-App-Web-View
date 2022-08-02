@@ -61,7 +61,7 @@
 } */
 
 .nutrition-details-page {
-  background-color: rgb(16, 216, 16);
+  background-color: #83f28f;
   height: 100vh;
   max-height: -webkit-fill-available;
 }
@@ -137,7 +137,7 @@ li {
 /*Recipe*/
 
 .recipe {
-  background-color: rgb(16, 216, 16);
+  background-color: #83f28f;
 
   height: 100%;
   max-height: -webkit-fill-available;
@@ -477,7 +477,7 @@ li {
 }
 
 .nutrition-details-page {
-  background-color: rgb(16, 216, 16);
+  background-color: #83f28f;
   height: 100vh;
   max-height: -webkit-fill-available;
 }
@@ -508,7 +508,7 @@ input::-webkit-inner-spin-button {
   background-color: white;
   font-size: 1.7rem;
   padding: 0.9rem 0.9rem;
-  color: #83f28f;
+  color: #39e75f;
 }
 
 .nutrition-detail-form-div {
@@ -547,7 +547,7 @@ li {
 
 .go-back-btn i {
   font-size: 2.5rem;
-  color: #83f28f;
+  color: #39e75f;
   margin-left: 1rem;
   margin-bottom: 0.2rem;
   margin-top: 0.5rem;
@@ -560,7 +560,7 @@ li {
 /*Recipe*/
 
 .recipe {
-  background-color: rgb(16, 216, 16);
+  background-color: #83f28f;
 
   height: 100%;
   max-height: -webkit-fill-available;
@@ -640,7 +640,7 @@ li {
   width: 100%;
 }
 body {
-  background-color: rgb(16, 216, 16);
+  background-color: #83f28f;
 }
 
 /*Ideas*/
